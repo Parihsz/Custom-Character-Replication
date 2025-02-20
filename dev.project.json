@@ -1,0 +1,12 @@
+{
+  "name": "custom-character-replication",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": { "Shared": { "$path": "src/shared" },
+    "Events": { "$path": "src/events" },
+    "Client": { "$path": "src/client" }
+    },
+    "ServerScriptService": { "Services": { "$path": "src/server" } }
+  }
+}

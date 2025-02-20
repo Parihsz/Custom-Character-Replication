@@ -1,0 +1,13 @@
+[package]
+name = "parihsz/thinkofagoodname"
+description = "Custom character replication"
+version = "0.3.0"
+
+license = "MIT"
+authors = ["Parihsz", "Tazmondo"]
+
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
+
+exclude = ["**"]
+include = ["default.project.json", "src", "src/**", "LICENSE.txt"]
