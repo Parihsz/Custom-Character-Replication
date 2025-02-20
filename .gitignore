@@ -7,4 +7,5 @@
 /.vscode/settings.json
 
 sourcemap.json
-src/events
+/src/events
+/.vscode
