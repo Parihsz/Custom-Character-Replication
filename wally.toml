@@ -1,10 +1,10 @@
 [package]
-name = "parihsz/thinkofagoodname"
+name = "parihsz/chrono"
 description = "Custom character replication"
 version = "0.3.0"
 
 license = "MIT"
-authors = ["Parihsz", "Tazmondo"]
+authors = ["Parihsz", "Azimus", "Tazmondo"]
 
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
