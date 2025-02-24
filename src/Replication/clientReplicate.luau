@@ -1,13 +1,12 @@
 local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
-local Config = require(ReplicatedStorage.Shared.config)
-local Snapshots = require(ReplicatedStorage.Shared.snapshots)
-local Events = require(ReplicatedStorage.Events.client)
+local Config = require(script.Parent.config)
+local Snapshots = require(script.Parent.snapshots)
+local Events = require(script.Parent.clientEvents)
 local InterpolationBuffer = require(script.Parent.interpolationBuffer)
-local ClientRig = require(ReplicatedStorage.Shared.rigs.createCharacter)
-local Networkables = require(ReplicatedStorage.Shared.makeNetworkable)
+local ClientRig = require(script.Parent.rigs.createCharacter)
+local Networkables = require(script.Parent.makeNetworkable)
 
 local idMap = {} :: {
 	[number]: {
@@ -200,3 +199,5 @@ RunService.PostSimulation:Connect(function()
 		})
 	end
 end)
+
+return {}

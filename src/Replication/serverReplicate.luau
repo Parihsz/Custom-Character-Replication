@@ -1,13 +1,11 @@
 local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
-local Config = require(ReplicatedStorage.Shared.config)
-local Snapshots = require(ReplicatedStorage.Shared.snapshots)
-local Grid = require(ReplicatedStorage.Shared.grid)
-local Events = require(ReplicatedStorage.Events.server)
-
-local Networkables = require(ReplicatedStorage.Shared.makeNetworkable)
+local Config = require(script.Parent.config)
+local Snapshots = require(script.Parent.snapshots)
+local Grid = require(script.Parent.grid)
+local Events = require(script.Parent.serverEvents)
+local Networkables = require(script.Parent.makeNetworkable)
 
 local Replication = {}
 

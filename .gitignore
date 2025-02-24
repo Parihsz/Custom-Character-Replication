@@ -7,5 +7,7 @@
 /.vscode/settings.json
 
 sourcemap.json
-/src/events
 /.vscode
+
+**/clientEvents.luau
+**/serverEvents.luau

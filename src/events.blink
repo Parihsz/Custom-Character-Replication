@@ -1,5 +1,7 @@
-option ClientOutput = "./events/client"
-option ServerOutput = "./events/server"
+option ClientOutput = "./Replication/clientEvents"
+option ServerOutput = "./Replication/serverEvents"
+-- uncomment when updating Blink version
+-- option RemoteScope = "CHARACTER_REPLICATION"
 
 struct Transform {
     Position: vector<f16>,
