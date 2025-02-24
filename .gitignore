@@ -9,5 +9,4 @@
 sourcemap.json
 /.vscode
 
-**/clientEvents.luau
-**/serverEvents.luau
+**/events.luau

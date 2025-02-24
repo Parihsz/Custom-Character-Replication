@@ -1,12 +1,15 @@
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 
-local Config = require(script.Parent.config)
-local Snapshots = require(script.Parent.snapshots)
-local Events = require(script.Parent.clientEvents)
+local shared = script.Parent.Parent.shared
+
+local Config = require(shared.config)
+local Snapshots = require(shared.snapshots)
+local ClientRig = require(shared.rigs.createCharacter)
+local Networkables = require(shared.makeNetworkable)
+
+local Events = require(script.Parent.events)
 local InterpolationBuffer = require(script.Parent.interpolationBuffer)
-local ClientRig = require(script.Parent.rigs.createCharacter)
-local Networkables = require(script.Parent.makeNetworkable)
 
 local idMap = {} :: {
 	[number]: {
